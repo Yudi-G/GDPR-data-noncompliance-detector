@@ -10,6 +10,11 @@ CORS(app)
 
 endpoint = backend_entry()
 
+@app.route("/")
+def index():
+        return "hello world"
+
+
 # @app.route("/file-upload", methods=["POST"])
 # def upload_file():
 #     if 'file' not in request.files:
