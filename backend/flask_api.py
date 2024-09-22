@@ -4,6 +4,8 @@ from flask_cors import CORS
 from pydantic import BaseModel
 from backend_entry import backend_entry
 from typing import List
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 app = Flask(__name__)
 CORS(app)
