@@ -10,9 +10,9 @@ CORS(app)
 
 endpoint = backend_entry()
 
-@app.route("/")
+@app.route("/api", methods=["GET"])
 def index():
-        return "hello world"
+    return "hello world"
 
 
 # @app.route("/file-upload", methods=["POST"])
